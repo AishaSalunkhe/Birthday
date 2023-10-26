@@ -1,38 +1,56 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.profile{
+  width: 100%;
+  height: 100vh;
+  background-color: palevioletred;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.profile .cont{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  width: 80%;
+  margin: 12px auto;
+}
+
+.cont img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.cont .sub-cont{
+  width: 300px;
+  font-weight: bolder;
+}
+
+.card{
+  width: 400px;
+  height: auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #000;
+}
+
+.profile button{
+  width: 90px;
+  height: 35px;
+  border-radius: 20px;
+  background: #000;
   color: white;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 15px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sub-cont p{
+  color: #999;
 }
